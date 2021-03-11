@@ -4,21 +4,18 @@ import ObjectiveQuestion from "../comman/objectiveQuestion";
 
 const DisplayObjectiveQuestions = (props) => {
 
-    const q = [{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब']},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब']},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब']}]
-   
-    const checkAnswer = (el) => {
-        console.log(el)
-    }
+    const q = [{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:1},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:2},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:3}]
+  
 
     return(
-        <div>
+        <div style={{marginLeft:'10%', paddingTop:'50px'}}>
             {
               q.map((el, index) => (
                 <ObjectiveQuestion 
                    key={index}              
                    question={el.question}
                    options={el.options}
-                   checkAnswer={checkAnswer}
+                   rightOption={el.rightOption}
                 />
               ))
             }
