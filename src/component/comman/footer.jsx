@@ -8,9 +8,8 @@ import { useTheme } from "@material-ui/styles";
 const useStyles = makeStyles({
 
     root:{
-        minHeight:'100px',
+        height:'100px',
         backgroundColor:'#282c34',
-        width:'100%',
         color:'#fff'       
       
     },
@@ -23,18 +22,15 @@ const useStyles = makeStyles({
       const theme = useTheme();
 
     return(
-        <div >
+        <div>
             <Card className={classes.root}>
-            <CardContent>
-                <p className={classes.copyRight}>Copyright Protected 2021, Vihar Siksha</p>  
-                <Box display="flex" justifyContent="center">    
-                    <div style={{display:'flex', gap:'10px', textAlign:'center'}}>
+                <CardContent>
+                    <div className={classes.copyRight}>
+                        <p >Copyright Protected 2021, Vihar Siksha</p>  
                         <p>About us</p>
                         <p>Contact us</p>
                     </div>
-                </Box>
-               
-            </CardContent>
+                </CardContent>
             </Card>
         </div>
     )

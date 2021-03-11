@@ -20,8 +20,7 @@ const Home = () =>{
 
     return(
         <div>
-           <NavBar/>
-           <div className={classes.subjectList} style={{ width: '100%' }}>   
+           <div className={classes.subjectList}>   
            <Box style={{marginTop:'20px'}} width="100%" display="flex" flexWrap="wrap" spacing={10}> 
 
             {
