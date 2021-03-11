@@ -15,23 +15,23 @@ const useStyles = makeStyles((theme) => ({
   }));
 const Home = () =>{
 
-    const subjectList = ['गणित', 
-    // 'अंग्रेज़ी', 'सामाजिक विज्ञान', 'विज्ञान', 'संस्कृत', 'हिन्दी','विज्ञान', 'संस्कृत', 'हिन्दी'
-]
+    const subjectList = ['गणित','अंग्रेज़ी', 'सामाजिक विज्ञान', 'विज्ञान', 'संस्कृत', 'हिन्दी','विज्ञान', 'संस्कृत', 'हिन्दी']
     const classes = useStyles();
 
     return(
         <div>
            <NavBar/>
-           <div className={classes.subjectList}>   
-           <Box display="flex" justifyContent="flex-start">
+           <div className={classes.subjectList} style={{ width: '100%' }}>   
+           <Box style={{marginTop:'20px'}} width="100%" display="flex" flexWrap="wrap" spacing={10}> 
 
             {
                 subjectList.map((el, index) => (
+                    <Box p={1} m={1}>
                     <DisplayCard
                         key={index}
                         title={el}
                     />
+                    </Box>
                 ))
             }      
      

@@ -6,21 +6,20 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    // maxWidth: '15%',
-    cursor:'pointer'
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
+    minWidth: 275,
+    cursor:'pointer',
+    textAlign:'center',
+    fontWeight:700
   },
   title: {
     fontSize: 20,
-    paddingTop:'10%'
-  },
-  pos: {
-    marginBottom: 12,
-  },
+    paddingTop:'10%',
+    fontWeight:700,
+    color:'#0f7c90',
+    '&:hover':{
+        color:'#3c3b37'
+    }
+  }
 });
 
 const DisplayCard = (props) => {
