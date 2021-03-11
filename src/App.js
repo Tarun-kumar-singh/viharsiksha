@@ -3,23 +3,20 @@ import Home from "../src/component/users/home";
 import Footer from './component/comman/footer';
 import NavBar from "../src/component/users/navBar";
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'; 
-import DisplayObjectiveQuestions from "./component/users/displayObjectiveQuestions";
 
 function App() {
   return (
-    <div>        
-      <NavBar/>
-      <BrowserRouter>
-        <Switch>
-
-            <Route exact path='/' component={Home} /> 
-            <Route exact path='/questions' component={DisplayObjectiveQuestions} /> 
-            {/* <Redirect to='/notfound' />   */}
-                
-        </Switch>
-      </BrowserRouter>  
- 
-       {/* <Footer/> */}
+    <div>      
+        <NavBar/>
+        <div style={{marginTop:'150px'}} >
+          <BrowserRouter>
+          <Switch> 
+              <Route exact path='/home' component={Home} />     
+          </Switch>
+          </BrowserRouter>  
+          </div>
+          {/* <Footer/> */}
+      
     </div>
   );
 }
