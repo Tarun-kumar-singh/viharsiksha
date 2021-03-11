@@ -21,7 +21,7 @@ const Home = () =>{
     return(
         <div>
            <div className={classes.subjectList}>   
-           <Box style={{marginTop:'20px'}} width="100%" display="flex" flexWrap="wrap" spacing={10}> 
+           <Box style={{marginTop:'20px'}} width="100%" justifyContent="center" display="flex" flexWrap="wrap" spacing={10}> 
 
             {
                 subjectList.map((el, index) => (
