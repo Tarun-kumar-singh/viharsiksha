@@ -25,12 +25,13 @@ const useStyles = makeStyles({
 const DisplayCard = (props) => {
 
     const classes = useStyles()
+    const {title} = props
     return(
-        <div>
+        <div onClick={props.cardClicked(title)}>
             <Card className={classes.root}>
                 <CardContent>
                     <Typography className={classes.title} gutterBottom>
-                        {props.title}
+                        {title}
                     </Typography>
                 </CardContent>
             </Card>

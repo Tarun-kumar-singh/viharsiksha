@@ -48,7 +48,7 @@ const ObjectiveQuestion = (props) => {
                     </Typography>
                  {
                     props.options.map((el, index) => (
-                         <Card onClick={() => checkAnswer(el, index, props.rightOption)} className={classes.card}> 
+                         <Card key={index} onClick={() => checkAnswer(el, index, props.rightOption)} className={classes.card}> 
                         
                          <div style={{display:'flex', direction:'row', gap:'20px'}}>
                              <div style={{display: solved && isAnswerCorrect && solvedOption === index ? 'block' : 'none'}}><CheckIcon style={{ color: green[500] }}/></div> 
