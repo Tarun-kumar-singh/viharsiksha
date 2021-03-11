@@ -8,7 +8,7 @@ import { useTheme } from "@material-ui/styles";
 const useStyles = makeStyles({
 
     root:{
-        height:'100px',
+        height:'130px',
         backgroundColor:'#282c34',
         color:'#fff'       
       
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
       textAlign:'center'
     }
 })
-    const Footer = () =>{
+const Footer = () =>{
       const classes = useStyles()
       const theme = useTheme();
 
