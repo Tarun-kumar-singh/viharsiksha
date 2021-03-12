@@ -1,24 +1,28 @@
 import './App.css';
-import Home from "../src/component/users/home";
+import Matric from "./component/users/matric";
 import Footer from './component/comman/footer';
 import NavBar from "../src/component/users/navBar";
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'; 
-import MatricModel from './component/comman/matricModel';
+import Home from "./component/users/home"; 
 
 function App() {
+
+
   return (
-    <div>      
-        <NavBar/>
-        <div style={{marginTop:'150px'}} >
-          <BrowserRouter>
-          <Switch> 
-              <Route exact path='/matric' component={Home} />   
-              <Route exact path='/matric-model' component={MatricModel} />     
-          </Switch>
-          </BrowserRouter>  
-          </div>
-          {/* <Footer/> */}
-      
+    <div>  
+        <BrowserRouter>
+             
+          <NavBar
+           routeValue={0}
+          />
+            <div style={{marginTop:'150px'}} >
+            <Switch> 
+                  <Route exact path='/' component={Home} />   
+                  <Route exact path='/matric' component={Matric} />   
+             </Switch>
+            </div>
+         
+        </BrowserRouter>  
     </div>
   );
 }
