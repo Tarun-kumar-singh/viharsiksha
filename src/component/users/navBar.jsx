@@ -26,7 +26,7 @@ const NavBar = () => {
     const history = useHistory()
 
     const changeRoute = () => {
-        history.push('/home')
+        // history.push('/home')
     }
     
     return(

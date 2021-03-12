@@ -3,7 +3,6 @@ import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Box from '@material-ui/core/Box';
-import { useTheme } from "@material-ui/styles";
 
 const useStyles = makeStyles({
 
@@ -19,7 +18,6 @@ const useStyles = makeStyles({
 })
 const Footer = () =>{
       const classes = useStyles()
-      const theme = useTheme();
 
     return(
         <div>

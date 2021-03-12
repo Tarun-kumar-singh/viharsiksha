@@ -9,7 +9,11 @@ const useStyles = makeStyles((theme) => ({
     subjectList:{
         marginTop:'20px',
         marginLeft:'5%'
-    }   
+    },
+    title:{
+        fontWeight:700,
+        marginLeft:'10%'
+    } 
 }));
 const Home = () =>{
 
@@ -24,6 +28,7 @@ const Home = () =>{
 
     return(
         <div>
+            <div className={classes.title}>वस्तुनिष्ठ प्रश्नों का अभ्यास करे</div>
            <div style={{display: displayQuestions ? 'none' : 'block' }} className={classes.subjectList}>   
                 <Box style={{marginTop:'20px'}} width="100%" justifyContent="center" display="flex" flexWrap="wrap" spacing={10}> 
                     {
@@ -41,7 +46,7 @@ const Home = () =>{
             </div>
             <div style={{display: displayQuestions ? 'block' : 'none' }}>
                 <DisplayObjectiveQuestions
-                    questions={[{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:1},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:2},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:3}]}
+                    questions={[{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:1},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:2},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:3},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:1},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:2},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:3},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:1},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:2},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:3},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:1},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:2},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:3},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:1},{question:'सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:2},{question:'last question hai सोपानी कृषि किस राज्य में प्रचलित है ?', options:['बिहार का मैदानी क्षेत्र','उत्तराखंड','हरियाणा','पंजाब'], rightOption:3}]}
             />
             </div>
         </div>
