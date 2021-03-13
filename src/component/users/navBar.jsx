@@ -28,19 +28,11 @@ const NavBar = (props) => {
     const history = useHistory()
 
     const [value, setValue] = useState(undefined);
-    const [reloadPage, setReloadPage] = useState(false)
-    const [rootKey, setRootKey] = useState('ewdfew')
     const routes = [{label:'Home', route:'/'}, {label:'मैट्रिक', route:'/matric'}]
-    const routeMap = {0:'/matric'}
+    const routeMap = {0: '/', 1:'/matric'}
 
     const changeTab = (e, v) => {
-        if(v === value){
-            
-
-
-            return
-        }
-        history.push(routeMap[0])
+        history.push(routeMap[v])
         setValue(v)
     }
 
@@ -51,7 +43,7 @@ const NavBar = (props) => {
     },[])
     
     return(
-        <div key={rootKey}>
+        <div>
             <AppBar position="fixed" color="default">
                  <Typography variant="h6" className={classes.title}>
                     विहार शिक्षा
