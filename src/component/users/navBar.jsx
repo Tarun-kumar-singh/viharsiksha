@@ -37,9 +37,11 @@ const NavBar = (props) => {
     }
 
     useEffect(()=>{
-        if(location.pathname === '/matric'){
-            setValue(0)
-        }
+        routes.map((el, index) => {
+            if(location.pathname === el.route){
+                setValue(index)
+            }
+        })
     },[])
     
     return(
